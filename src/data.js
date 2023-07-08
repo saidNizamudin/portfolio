@@ -1,7 +1,6 @@
 export const PROJECTS = [
 	{
 		id: 1,
-		slug: 'staredu',
 		name: 'StarEdu',
 		description: `StarEdu is an online learning platform for high school students and educators. 
 		It offers tailored resources, income opportunities for teachers, and a vibrant community. 
@@ -11,7 +10,6 @@ export const PROJECTS = [
 	},
 	{
 		id: 2,
-		slug: 'sikotakpos',
 		name: 'SIKOTAKPOS',
 		description: `SIKOTAKPOS is a system for ITB's Oceanography (Institut Teknologi Bandung) 
 		students, lecturers, and staff, simplifying the monitoring of milestones from coloquium, intern, 
@@ -22,7 +20,6 @@ export const PROJECTS = [
 	},
 	{
 		id: 3,
-		slug: 'koas-helper',
 		name: 'Koas Helper',
 		description: ` Enhancing Efficiency in Medical Student's Patient Lab Test Mapping at 
 		RSUD Zainoel Abidin Aceh. Simplify and streamline the process of mapping lab tests 
