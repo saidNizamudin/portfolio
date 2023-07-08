@@ -1,0 +1,31 @@
+.contactCardContainer {
+	padding: 1em;
+	width: fit-content;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #141716;
+	border-radius: 4px;
+	color: white;
+	font-size: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	text-decoration: none;
+}
+
+.contactCardText {
+	margin-left: 0.5em;
+	color: #e4aa48;
+	font-size: 16px;
+	transition: all 0.3s ease-in-out;
+}
+
+.contactCardContainer:hover {
+	background-color: #e4aa48;
+	color: black;
+}
+
+.contactCardContainer:hover .contactCardText {
+	color: black;
+}
