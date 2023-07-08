@@ -8,11 +8,7 @@ import styles from './ContactCard.module.css';
 
 export default function ContactCard({ contact }) {
 	return (
-		<a
-			className={styles.contactCardContainer}
-			href={contact.link}
-			target="_blank"
-			rel="noopener noreferrer">
+		<a className={styles.contactCardContainer} href={contact.link} target="_blank" rel="noreferrer">
 			{
 				{
 					envelope: <FaEnvelope />,
