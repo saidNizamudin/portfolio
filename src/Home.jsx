@@ -1,12 +1,16 @@
-import { faFileDownload, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useEffect } from 'react';
 import styles from './Home.module.css';
-import ContactCard from './components/ContactCard';
-import ProjectCard from './components/ProjectCard';
-import { CONTACTS, PROJECTS } from './data';
+import { Footer, ProjectCard } from './components';
+import { PROJECTS } from './data';
 import CV from '/CV.pdf';
 
 export default function Home() {
+	useEffect(() => {
+		document.title = 'Said Nizamudin';
+	}, []);
+
 	return (
 		<>
 			<div className={styles.homeContainer} id="home">
@@ -33,7 +37,7 @@ export default function Home() {
 				</div>
 				<img src="/avatar.png" alt="Said Nizam's Face" className={styles.homeImage} />
 			</div>
-			{/* <div className={styles.expertiseContainer}>
+			<div className={styles.expertiseContainer}>
 				<div className={styles.expertiseBorder}>
 					<div className={styles.expertiseTextContainer}>
 						<span className={styles.expertiseTitle}>Skills</span>
@@ -69,7 +73,7 @@ export default function Home() {
 						))}
 					</div>
 				</div>
-			</div> */}
+			</div>
 			<div className={styles.projectContainer} id="project">
 				<div className={styles.projectTextContainer}>
 					<span className={styles.projectTitle}>Projects</span>
@@ -85,26 +89,7 @@ export default function Home() {
 					))}
 				</div>
 			</div>
-			<div className={styles.contactContainer} id="contact">
-				<div className={styles.contactTextContainer}>
-					<span className={styles.contactTitle}>Contacts</span>
-					<span className={styles.contactDescription}>
-						{`Connect with me through various platforms and let's get in touch! You can reach me via
-						email, WhatsApp, LinkedIn, Github, or Twitter. Feel free to drop me a message,
-						collaborate on contacts, or discuss potential opportunities. I look forward to hearing
-						from you!`}
-					</span>
-				</div>
-				<div className={styles.contactListContainer}>
-					{CONTACTS.map((contact) => (
-						<ContactCard key={contact.id} contact={contact} />
-					))}
-				</div>
-				<span className={styles.footer}>
-					© 2023 Said Nizamudin | All rights reserved | Made with
-					<FontAwesomeIcon icon={faHeart} className={styles.footerIcon} />
-				</span>
-			</div>
+			<Footer />
 		</>
 	);
 }

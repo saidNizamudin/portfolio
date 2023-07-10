@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
+import { useNavigate } from 'react-router-dom';
 import styles from './ProjectCard.module.css';
 
 export default function ProjectCard({ project }) {
+	const navigate = useNavigate();
+
 	return (
-		<div className={styles.projectCardContainer}>
+		<div className={styles.projectCardContainer} onClick={() => navigate(`/${project.slug}`)}>
 			<img src={project.thumbnail} alt={project.name} className={styles.projectCardImage} />
 			<div className={styles.projectCardTextContainer}>
 				<div className={styles.projectCardTitleTech}>
