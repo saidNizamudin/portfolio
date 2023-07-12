@@ -6,7 +6,7 @@
 
 **TECH STACKS**
 
-React (Javascript) • Golang • Redux • Formik • Axios • Material UI • Chakra UI • Tailwind CSS
+React (Javascript) • Golang • MySQL • Redux • Formik • Axios • Material UI • Chakra UI • Tailwind CSS
 
 ---
 
@@ -20,7 +20,7 @@ At StarEdu, we believe that education should be accessible and engaging for all.
 
 ## Team
 
-![Team Photo](public/staredu-team.jpg)
+![Team Photo](/staredu-team.jpg)
 
 ## Implementation
 

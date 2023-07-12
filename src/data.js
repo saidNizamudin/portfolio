@@ -27,7 +27,7 @@ export const PROJECTS = [
 		description: ` Enhancing Efficiency in Medical Student's Patient Lab Test Mapping at 
 		RSUD Zainoel Abidin Aceh. Simplify and streamline the process of mapping lab tests 
 		for improved accuracy and effectiveness in patient care.`,
-		tech: ['React', 'Typescript', 'Redux', 'GraphQL', 'Vercel'],
+		tech: ['React', 'Typescript', 'Node.js', 'GraphQL', 'Vercel'],
 		thumbnail: '/koas-helper.jpg',
 	},
 ];
