@@ -1,4 +1,4 @@
-# SIKOTAKPOS's Documentation
+# Documentation
 
 ## SIKOTAKPOS (Sistem Informasi Kolokium Tugas Akhir Kerja Prakter Oseanografi ITB)
 

@@ -1,4 +1,4 @@
-# STAREDU's DOCUMENTATION
+# DOCUMENTATION
 
 ## Overview
 
@@ -20,7 +20,7 @@ At StarEdu, we believe that education should be accessible and engaging for all.
 
 ## Team
 
-![Team Photo](/staredu-team.jpg)
+<img src="/staredu-team.jpg" alt="Team Photo" style="aspect-ratio: 2/1 ;width: 100%; object-fit: cover; object-position: bottom">
 
 ## Implementation
 

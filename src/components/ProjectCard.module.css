@@ -1,63 +1,112 @@
 .projectCardContainer {
-	width: 100%;
-	height: 100%;
-	border-radius: 8px;
+	min-width: 350px;
 	display: flex;
 	flex-direction: column;
+	border-radius: 8px;
+	background: #26272c;
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
+	
+
+	@media (max-width: 600px) {
+		min-width: 300px;
+	}
 }
 
 .projectCardContainer:hover {
 	transform: scale(1.02);
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-	opacity: 0.8;
 }
 
 .projectCardImage {
 	width: 100%;
+	max-height: 250px;
+	min-height: 250px;
 	border-radius: 8px 8px 0 0;
 	object-fit: cover;
+	object-position: top;
 }
 
 .projectCardTextContainer {
+	display: flex;
+	flex-direction: column;
 	height: 100%;
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: -webkit-fill-available;
-	padding: 0 2em 1em 1em;
-	background-color: #26262d;
-	border-radius: 0 0 8px 8px;
+	padding: 1em;
 	border: 2px solid white;
-	border-top: none;
-	gap: 2em;
-}
-
-.projectCardTitleTech {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: flex-start;
+	border-radius: 0 0 8px 8px;
 }
 
 .projectCardTitle {
-	color: white;
-	font-size: 50px;
+	font-size: 24px;
 	font-weight: 600;
+	line-height: 1;
+	margin-bottom: 12px;
+	color: #e4aa48;
+}
+
+.projectCardCompany {
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1;
+	color: white;
+	margin-bottom: 6px;
 }
 
 .projectCardTech {
+	font-size: 12px;
+	font-weight: 500;
+	min-height: 50px;
 	color: #e4aa48;
-	font-size: 16px;
-	font-weight: 400;
+
+	@media (max-width: 600px) {
+		min-height: unset;
+		margin-bottom: 1em;
+	}
 }
 
 .projectCardDescription {
-	height: 100%;
-	color: white;
+	margin-top: 1em;
 	font-size: 14px;
 	font-weight: 300;
-	opacity: 0.8;
+	text-wrap: pretty;
+	margin-bottom: 2em;
+	color: white;
+
+	@media (max-width: 600px) {
+		display: none;
+	}
 }
+
+.projectCardButtonContainer {
+	margin-top: auto;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: .25em;
+}
+
+.projectCardButton {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background: #e4aa48;
+	color: #212121;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 6px 12px;
+	border-radius: 8px;
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	outline: none;
+	border: none;
+}
+
+.projectCardButton:hover {
+	background-color: #ac833c;
+}
+
+.icon {
+	width: 16px;
+	margin-right: 0.5em;
+}
+

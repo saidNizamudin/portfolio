@@ -1,4 +1,4 @@
-# KOAS Helper's Documentation
+# Documentation
 
 ## Description
 
