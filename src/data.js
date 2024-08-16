@@ -256,7 +256,7 @@ export const WORKS = [
     position: "Software Engineer",
     date: "July 2023 - Present",
     location: "South Jakarta, Indonesia",
-    logo: "/sml-logo.webp",
+    logo: "/sml-logo.png",
   },
   {
     id: 2,
@@ -264,7 +264,7 @@ export const WORKS = [
     position: "Software Engineer Intern",
     date: "February 2022 - October 2022",
     location: "South Jakarta, Indonesia",
-    logo: "/oy-logo.webp",
+    logo: "/oy-logo.png",
   },
   {
     id: 3,
@@ -272,6 +272,6 @@ export const WORKS = [
     position: "Software Engineer",
     date: "January 2021 - April 2021",
     location: "Remote",
-    logo: "/itb-logo.webp",
+    logo: "/itb-logo.png",
   },
 ];
