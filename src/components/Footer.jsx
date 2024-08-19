@@ -9,7 +9,6 @@ import { FaWhatsapp } from "@react-icons/all-files/fa/FaWhatsapp";
 export default function Footer() {
   return (
     <div className={styles.footerContainer} id="contact">
-      <img src="/logo.png" alt="My Logo" className={styles.footerLogo} />
       <div className={styles.footerItemContainer}>
         {CONTACTS.map((contact) => (
           <a
@@ -28,6 +27,17 @@ export default function Footer() {
                 whatsapp: <FaWhatsapp />,
               }[contact.icon]
             }
+            <span className={styles.contactText}>
+              {
+                {
+                  envelope: "saidnizamudin@gmail.com",
+                  github: "saidNizamudin",
+                  linkedin: "Said Nizamudin",
+                  twitter: "bingboonk",
+                  whatsapp: "+6282165201341",
+                }[contact.icon]
+              }
+            </span>
           </a>
         ))}
       </div>

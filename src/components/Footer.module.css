@@ -1,14 +1,19 @@
 .footerContainer {
 	display: flex;
+	align-items: start;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	width: -webkit-fill-available;
 	padding: 24px;
 	gap: 12px;
 	z-index: 1;
 	background-color: white;
 	box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.2);
+
+	@media (min-width: 660px) {
+		flex-direction: row;
+		align-items: center;
+	}
 }
 
 .footerLogo {
@@ -17,21 +22,47 @@
 
 .footerItemContainer {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	align-items: flex-start;
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 12px;
+	min-width: 300px;
 }
 
 .footerItem {
 	display: flex;
-	padding: 6px;
+	align-items: center;
+	padding: 6px 12px;
 	background-color: black;
 	border-radius: 12px;
 	color: white;
-	font-size: 36px;
 	transition: all 0.3s ease-in-out;
 	outline: none;
+	text-decoration: none;
+	max-height: 36px;
+
+	svg {
+		width: auto;
+		height: 36px;
+	}
+}
+
+.contactText {
+	color: #F45B0F;
+	max-width: 0;
+	opacity: 0;
+	visibility: hidden;
+	font-size: 16px;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.footerItem:hover .contactText {
+	margin-left: 12px;
+	opacity: 1;
+	visibility: visible;
+	max-width: 300px;
 }
 
 .footerItem:hover {
@@ -39,8 +70,16 @@
 }
 
 .footerText {
+	align-self: flex-end;
 	font-size: 16px;
 	color: #F45B0F;
-	text-align: center;
-	text-wrap: balance;
+	text-align: left;
+	text-wrap: wrap;
+	min-width: 300px;
+
+	@media (min-width: 660px) {
+		text-align: right;
+		text-wrap: balance;
+	}
 }
+
