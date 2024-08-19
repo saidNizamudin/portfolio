@@ -7,14 +7,7 @@ export const PROJECTS = [
     description: `StarEdu is an online learning platform for high school students and educators. 
 		It offers tailored resources, income opportunities for teachers, and a vibrant community. 
 		Empower your education journey with StarEdu.`,
-    tech: [
-      "React",
-      "Tailwind CSS",
-      "Material UI",
-      "Golang",
-      "Flutter",
-      "MySQL",
-    ],
+    tech: ["React", "Tailwind CSS", "Golang", "Flutter", "MySQL"],
     thumbnail: "/staredu.webp",
     live: "https://staredu-desktop.netlify.app",
     images: [
@@ -106,15 +99,7 @@ export const PROJECTS = [
     description: `A job posting application that facilitates the posting of job offers by users and enables 
     companies to receive and respond to these offers. This platform streamlines the job application process, 
     enhancing efficiency for both users and companies.`,
-    tech: [
-      "Javascript",
-      "React",
-      "Tailwind",
-      "Python",
-      "FastAPI",
-      "PostgreSQL",
-      "WebSocket",
-    ],
+    tech: ["React", "Tailwind", "Python", "FastAPI", "PostgreSQL", "WebSocket"],
     thumbnail: "/de-dolphin.webp",
     images: [
       "Login",
@@ -254,24 +239,39 @@ export const WORKS = [
     id: 1,
     company: "SML Technologies",
     position: "Software Engineer",
-    date: "July 2023 - Present",
+    startDate: "July 2023",
+    endDate: "Present",
     location: "South Jakarta, Indonesia",
     logo: "/sml-logo.png",
+    responsibilities: [
+      `Developed Integrated Configuration Management (ICAM) for Telkomsel using Vue.js and Java,  with 7 main modules, 15+ pages, and a dashboard managing 200+ data entries across 40+ cities in Indonesia`,
+      `Built Computerized Maintenance Management Systems (CMMS) for PT Bayan Resource using Vue.js and Java, featuring 12+ modules for asset monitoring and a dashboard managing 200+ assets`,
+    ],
   },
   {
     id: 2,
     company: "OY! Indonesia",
     position: "Software Engineer Intern",
-    date: "February 2022 - October 2022",
+    startDate: "February 2022",
+    endDate: "October 2022",
     location: "South Jakarta, Indonesia",
     logo: "/oy-logo.png",
+    responsibilities: [
+      `Integrated Xero Accounting Software with OY! Indonesia, successfully implementing the first integrated feature at OY!`,
+      `Resolved 20+ critical bugs, implemented 10+ new features, fixed 300+ key errors for bilingual support and other 50+ error from Sentry, and managed OY!'s internal website for staff.`,
+    ],
   },
   {
     id: 3,
     company: "Oceanography ITB",
     position: "Software Engineer",
-    date: "January 2021 - April 2021",
+    startDate: "January 2022",
+    endDate: "April 2022",
     location: "Remote",
     logo: "/itb-logo.png",
+    responsibilities: [
+      `Developed SIKOTAKPOS, an information system for Oceanography ITB, supporting 10+ admins, 50+ lecturers, and 200+ students annually`,
+      `Led a team of 5, managing the project from inception to deployment using Django Framework, PostgreSQL, and Heroku.`,
+    ],
   },
 ];
