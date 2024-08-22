@@ -237,10 +237,21 @@ export const CONTACTS = [
 export const WORKS = [
   {
     id: 1,
+    company: "Quantum Teknologi Nusantara",
+    position: "Software Engineer",
+    startDate: "Septtember 2024",
+    endDate: "Present",
+    location: "Remote",
+    logo: "/quantum-logo.png",
+    isBlackedOut: true,
+    responsibilities: ["No Description Yet"],
+  },
+  {
+    id: 2,
     company: "SML Technologies",
     position: "Software Engineer",
     startDate: "July 2023",
-    endDate: "Present",
+    endDate: "August 2024",
     location: "South Jakarta, Indonesia",
     logo: "/sml-logo.png",
     responsibilities: [
@@ -249,7 +260,7 @@ export const WORKS = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     company: "OY! Indonesia",
     position: "Software Engineer Intern",
     startDate: "February 2022",
@@ -262,7 +273,7 @@ export const WORKS = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     company: "Oceanography ITB",
     position: "Software Engineer",
     startDate: "January 2022",

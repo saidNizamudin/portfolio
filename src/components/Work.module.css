@@ -49,9 +49,11 @@
 .work {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	min-width: none;
 	height: max-content;
 	max-height: max-content;
+	min-height: 118px;
 	padding: 24px;
 	border: 2px solid #969799;
 	border-radius: 26px;

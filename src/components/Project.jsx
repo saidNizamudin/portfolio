@@ -1,7 +1,13 @@
 import styles from "./Project.module.css";
 import { PROJECTS } from "../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faFileCode } from "@fortawesome/free-solid-svg-icons";
+import {
+  faUser,
+  faFileCode,
+  faPaintBrush,
+  faBookBookmark,
+  faPlayCircle,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Project() {
   return (
@@ -29,6 +35,29 @@ export default function Project() {
                   {project.tech.join(" - ")}
                 </span>
               </div>
+            </div>
+            <div className={styles.projectButtons}>
+              <button className={styles.button}>
+                <FontAwesomeIcon
+                  icon={faPaintBrush}
+                  className={styles.buttonIcon}
+                  style={{ marginRight: 5 }}
+                />
+              </button>
+              <button className={styles.button}>
+                <FontAwesomeIcon
+                  icon={faBookBookmark}
+                  className={styles.buttonIcon}
+                  style={{ marginRight: 5 }}
+                />
+              </button>
+              <button className={styles.button}>
+                <FontAwesomeIcon
+                  icon={faPlayCircle}
+                  className={styles.buttonIcon}
+                  style={{ marginRight: 5 }}
+                />
+              </button>
             </div>
           </div>
         ))}

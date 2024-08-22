@@ -29,7 +29,12 @@ export default function Work() {
             onClick={handleClick(index)}
           >
             <div>
-              <div className={styles.workLogoContainer}>
+              <div
+                className={styles.workLogoContainer}
+                style={{
+                  background: work.isBlackedOut ? "#212121" : "white",
+                }}
+              >
                 <img
                   src={work.logo}
                   alt={work.company}
